@@ -1,0 +1,76 @@
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between brand and menu */
+  align-items: center; /* Center items vertically */
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  padding: 10px 20px; /* Padding for the navbar */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Position at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+.navbar-brand {
+  color: #fff; /* White text for the brand */
+  font-size: 1.5rem; /* Larger font size */
+}
+
+.navbar-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal layout */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-menu li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.navbar-menu a {
+  color: #fff; /* White text */
+  text-decoration: none; /* No underline */
+  padding: 10px; /* Padding for clickable area */
+  transition: color 0.3s; /* Smooth color transition */
+  display: flex; /* Flexbox to align items */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-menu a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+/* Toggle button for mobile view */
+.navbar-toggle {
+  display: none; /* Hidden by default */
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* White color */
+  font-size: 1.5rem; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position absolute for dropdown */
+    top: 50px; /* Below the navbar */
+    right: 0; /* Align to the right */
+    background-color: #000; /* Match background color */
+    width: 100%; /* Full width */
+    display: none; /* Hide by default */
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-menu li {
+    margin: 10px 0; /* Space for vertical stacking */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show toggle button */
+  }
+}

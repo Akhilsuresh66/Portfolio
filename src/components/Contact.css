@@ -1,0 +1,44 @@
+.contact {
+  padding: 40px;
+  /* Set this to your desired background color */
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: center;
+  align-items: center;
+  color: white; /* Set text color to white */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: white; /* Ensure the heading text is white */
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #007bff; /* Keep link color or change it to white */
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  color: white; /* Change icon color to white */
+  font-size: 20px;
+}
+
+p {
+  color: white; /* Change paragraph text color to white */
+  font-size: 16px;
+}

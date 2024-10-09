@@ -1,0 +1,38 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: none;
+  }
+  
+  .content {
+    text-align: center;
+    color: #fff;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    transform: translateZ(20px); /* 3D depth */
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    transform: translateZ(15px); /* 3D depth */
+  }
+  .name-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the same color as the surrounding text */
+  }
+  
+  .name-link:hover {
+    color: #007bff; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }

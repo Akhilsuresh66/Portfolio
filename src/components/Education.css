@@ -1,0 +1,62 @@
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* Education Timeline */
+.education-timeline {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.education-timeline h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.education-timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-timeline li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.education-timeline li::before {
+  content: '•'; /* Bullet point */
+  position: absolute;
+  left: 0;
+  color: #000; /* Change this color to your preference */
+  font-size: 24px;
+  line-height: 1;
+}
+
+.education-timeline .year {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Center Internship Section */
+.internship-section {
+  flex: 2;
+  text-align: center;
+}
+
+.internship-section img {
+  margin-top: 20px;
+  width: 200px; /* Adjust as needed */
+  height: auto;
+}
+/* Personal Image Section */
+.personal-image-section img,
+.internship-image {
+  width: 200px;  /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+}
